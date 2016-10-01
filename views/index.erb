@@ -23,6 +23,10 @@
   <input type="submit" value="天気取得">
 </form>
 
+<% if @ex.nil? != true %>
+  <p><%= escape_html @ex %></p>
+<% end %>
+
 <% if @forecasts.nil? != true %>
   <div>
     <p><%= escape_html @title %></p>
